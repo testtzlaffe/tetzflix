@@ -13,7 +13,7 @@ export default function CadastroCategoria() {
   const [values, setValues] = useState(valoresIniciais);
 
   useEffect(() => {
-    const url = "http://localhost:3001/categorias";
+    const url = "http://localhost:8080/categorias";
 
     setTimeout(() => {
       fetch(url).then(async (response) => {
