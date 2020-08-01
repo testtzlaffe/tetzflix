@@ -11,6 +11,12 @@
       "nome": "Back End",
       "descricao": "descriçao asdfasdf",
       "cor": "#cbd1ff"
+    },
+    {
+      "id": 3,
+      "nome": "Devops",
+      "descricao": "descriçao asdfasdf",
+      "cor": "#cbd1ff"
     }
   ]
 }
