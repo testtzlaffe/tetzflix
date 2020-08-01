@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
 import FormField from "../../../components/FormField";
 
 export default function CadastroCategoria() {
   const valoresIniciais = {
-    nome: "Categoria inicial",
-    descricao: "Descrição inicial",
+    nome: "",
+    descricao: "",
     cor: "#000000",
   };
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
+
+  useEffect(() => {
+    const url = "http://localhost:3001/categorias";
+
+    setTimeout(() => {
+      fetch(url).then(async (response) => {
+        const data = await response.json();
+        setCategorias([...data]);
+      });
+    }, 3 * 1000);
+  }, []);
 
   function setValue(chave, valor) {
     setValues({
@@ -43,7 +54,7 @@ export default function CadastroCategoria() {
 
         <FormField
           label="Descrição"
-          type="text"
+          type="textarea"
           name="descricao"
           onChange={handleChange}
           value={values.descricao}
@@ -59,6 +70,8 @@ export default function CadastroCategoria() {
 
         <button>Cadastrar</button>
       </form>
+
+      {categorias.length === 0 && <div>Loading...</div>}
 
       <ul>
         {categorias.map((categoria, indice) => (
