@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="Logo" src="./src/assets/img/Logo.png" />
+</p>
+<img alt="Página Inicial" src="./src/assets/img/Tela.png" />
+<br>
 
-## Available Scripts
+<div align="center">
+    <img src="https://img.shields.io/badge/frontend-react-blue"/>
+</div>
+<br>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#sobre">Sobre o projeto</a> | 
+  <a href="#tecnologias">Tecnologias</a> | 
+  <a href="#run">Rodando o projeto</a> | 
+  <a href="#contato">Contato</a>
+</p>
 
-### `yarn start`
+<a id="sobre"></a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :rocket: Sobre o projeto
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Este projeto foi desenvolvido na Imersão React da Alura. Trata-se de uma aplicação para apresentar alguns vídeos sobre desenvolvimento web (front-end, back-end e devops).
 
-### `yarn test`
+A sequência de apresentação das categorias é alterada a depender de qual categoria o usuário mais clica.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Resultado disponível em [tetzflix.vercel.app](https://tetzflix.vercel.app).
 
-### `yarn build`
+Também criei um segundo projeto com a mesma base na Imersão React: NETFENIX, com vídeos sobre os Cavaleiros do Zodíaco.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[netfenix.vercel.app](https://netfenix.vercel.app)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[Repositório NETFENIX](https://github.com/testtzlaffe/netfenix)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a id="tecnologias"></a>
 
-### `yarn eject`
+## :computer: Tecnologias
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+O projeto foi desenvolvido utilizando as tecnologias:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ReactJS](https://reactjs.org/)
+- [React Slick](https://www.npmjs.com/package/react-slick)
+- [Styled Components](https://styled-components.com/)
+- [JSON Server](https://www.npmjs.com/package/json-server)
+- [Concurrently](https://www.npmjs.com/package/concurrently)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<a id="run"></a>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## :running: Rodando o projeto
 
-## Learn More
+1. Pré-requisitos:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **[Node.js](https://nodejs.org/en/)**, **[Git](https://git-scm.com/)** e um gerenciador de pacotes (**[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**) instalados na máquina.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Clonar o repositório:
 
-### Code Splitting
+```sh
+  $ git clone https://github.com/testtzlaffe/tetzflix.git
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+3. Iniciar o ambiente de desenvolvimento da aplicação react native:
 
-### Analyzing the Bundle Size
+```sh
+  # Instalar as bibliotecas e as dependências
+  $ npm install (ou yarn)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+  # Iniciar a aplicação
+  $ cd tetzflix
+  $ npm run dev (ou yarn dev)
+```
 
-### Making a Progressive Web App
+<a id="contato"></a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## :coffee: Contato
 
-### Advanced Configuration
+<h4>
+    Gostou do projeto? Fique a vontade para mandar críticas ou sugestões. Se quiser iniciar um papo, conversar sobre este trabalho ou qualquer outro assunto, me chame no <a href="https://www.linkedin.com/in/christian-testtzlaffe-alpoim/" target="_blank">Linkedin</a>.
+</h4>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+---
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<h4 align="center">
+    Feito com 💜 por <a href="https://www.linkedin.com/in/christian-testtzlaffe-alpoim/" target="_blank">Christian Testtzlaffe Alpoim</a>
+</h4>
