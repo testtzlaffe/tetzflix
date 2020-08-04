@@ -13,10 +13,12 @@ export default function CadastroCategoria() {
   const [values, setValues] = useState(valoresIniciais);
 
   useEffect(() => {
-    const url = "https://tetzflix.herokuapp.com/categorias";
+    const URL = window.location.hostname.includes("localhost")
+      ? "http://localhost:8080/categorias"
+      : "https://tetzflix.herokuapp.com/categorias";
 
     setTimeout(() => {
-      fetch(url).then(async (response) => {
+      fetch(URL).then(async (response) => {
         const data = await response.json();
         setCategorias([...data]);
       });

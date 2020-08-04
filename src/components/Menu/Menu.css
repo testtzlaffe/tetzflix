@@ -1,9 +1,17 @@
-.Logo {
+.Logo,
+.LogoNetfenix {
   max-width: 168px;
 }
+.LogoNetfenix:hover {
+  max-width: 200px;
+}
 @media (max-width: 800px) {
-  .Logo {
+  .Logo,
+  .LogoNetfenix {
     max-width: 105px;
+  }
+  .LogoNetfenix:hover {
+    max-width: 110px;
   }
 }
 
@@ -72,4 +80,13 @@ body {
     border: 0;
     text-align: center;
   }
+}
+
+.containerDir {
+  display: flex;
+  align-items: center;
+}
+
+.LogoNetfenix {
+  margin-right: 30px;
 }
